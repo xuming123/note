@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+	<title>清除浮动</title>
+	<style>
+.conter{width: 400px;background: red;}
+.left{width: 100px;float: left;}
+.right{width: 100px;float: right;}
+	/* 方法1 overflow: hidden; 父*/
+	/* 方法2 height: 100px 父*/
+	/* 方法3.cl{clear: both;}*/	
+	/*方法4*/.clear:after{content:"";display: block;clear: both;}
+	/*方法5float: left;*父/
+	</style>
+</head>
+<body>
+<div class="conter clear">
+	<div class="left">wewewewe</div>
+    <div class="right">dfd dfd fd fd df </div>
+     <div class="cl"></div>
+</div>
+</body>
+</html>
